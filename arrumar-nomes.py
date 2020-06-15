@@ -12,7 +12,7 @@ for nomeCompleto in listaNomes:
             nome = nome.lower()
         else:
             nome = nome.capitalize()
-        nomeArrumado = nomeArrumado + nome + ' '
+        nomeArrumado = ' '.join([nomeArrumado, nome])
     nomesArrumados.append(nomeArrumado)
 
 print(nomesArrumados)
