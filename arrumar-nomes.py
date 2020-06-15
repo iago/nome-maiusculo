@@ -1,6 +1,7 @@
 arqNomeMaiusc = open('lista-nomes-maiusc.txt', 'r')
 listaNomes = arqNomeMaiusc.readlines()
 arqNomeMaiusc.close()
+nomesArrumados = []
 
 for nomeCompleto in listaNomes:
     nomeArrumado = ''
@@ -12,4 +13,6 @@ for nomeCompleto in listaNomes:
         else:
             nome = nome.capitalize()
         nomeArrumado = nomeArrumado + nome + ' '
-    print(nomeArrumado)
+    nomesArrumados.append(nomeArrumado)
+
+print(nomesArrumados)
